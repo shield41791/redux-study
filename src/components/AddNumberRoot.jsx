@@ -6,10 +6,7 @@ class AddNumberRoot extends React.Component {
     return (
       <div>
         <h1>Add Number Root</h1>
-        <AddNumber onClick={function(size) {
-          // alert(`size : ${size}`);
-          this.props.onClick(size);
-        }.bind(this)}></AddNumber>
+        <AddNumber/>
       </div>
     )
   }
