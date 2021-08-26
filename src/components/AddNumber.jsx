@@ -1,5 +1,4 @@
 import React from 'react';
-import store from '../store';
 
 class AddNumber extends React.Component {
   state = { size: 1 }
@@ -9,9 +8,9 @@ class AddNumber extends React.Component {
       <div>
         <h1>Add Number</h1>
         
-        <input type="button" value="+" onClick={function () {
-          // onclick시 해당 action을 dispatch로 전달한다. this.state는 redux의 state가 아니라 이 컴포넌트의 state이다.
-          store.dispatch({ type: 'INCREMENT', size: this.state.size });
+        <input type="button" value="+" onClick={function() {
+          // 이 컴포넌트를 부른 곳(redux 기능을 분리시킨 AddNumberWrap 내부)의 onClick을 호출
+          this.props.onClick(this.state.size);
         }.bind(this)}></input>
         
         <input type="text" value={this.state.size} onChange={function (e) {
