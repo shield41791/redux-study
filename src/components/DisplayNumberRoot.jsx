@@ -6,7 +6,7 @@ class DisplayNumberRoot extends React.Component {
     return (
       <div>
         <h1>Display Number Root</h1>
-        <DisplayNumberWrap/>
+        <DisplayNumberWrap unit="kg" />
       </div>
     )
   }

@@ -6,7 +6,7 @@ class AddNumberRoot extends React.Component {
     return (
       <div>
         <h1>Add Number Root</h1>
-        <AddNumberWrap/>
+        <AddNumberWrap />
       </div>
     )
   }

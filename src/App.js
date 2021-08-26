@@ -10,8 +10,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Root</h1>
-        <AddNumberRoot/>
-        <DisplayNumberRoot/>
+        <AddNumberRoot />
+        <DisplayNumberRoot />
       </div>
     );
   }
