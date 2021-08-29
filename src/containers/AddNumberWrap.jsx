@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 function mapReduxDispatchToReactProps(dispatch) {
   return {
     onClick: function (size) {
-      // onclick시 해당 action을 dispatch로 전달한다.
+      // onclick시 해당 action을 reducer로 전달한다.
       dispatch({ type: 'INCREMENT', size: size });
     }
   }
