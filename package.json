@@ -1,5 +1,5 @@
 {
-  "name": "hello-redux",
+  "name": "redux-study",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://shield41791.github.io/hello-redux/"
+  "homepage": "https://shield41791.github.io/redux-study/"
 }
